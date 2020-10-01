@@ -16,7 +16,11 @@ body {
 
 body {
     position: relative;
+    z-index: 4;
     min-width: 320px;
+    font-size: 14px;
+    line-height: 20px;
+    @include os400;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -77,3 +81,205 @@ button {
     margin: -1px;
     clip: rect(0 0 0 0);
 }
+
+// link===========================================================
+.link {
+    display: inline-block;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    background-color: #8b8b8b;
+    border: none;
+    @include tr3;
+
+    &:hover {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px 0 #000;
+    }
+}
+
+//end link========================================================
+// title===========================================================
+.title {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    @include c700;
+}
+
+// end title=======================================================
+
+// input and label===========================================================
+.input {
+    height: 45px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #7c7c7c;
+
+    &::placeholder {
+        color: #8b8b8b;
+    }
+}
+
+.label {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+//end input and label===========================================================
+// breadcrumbs=========================================================
+
+.breadcrumbs {
+    padding: 20px 0;
+    list-style: none;
+
+    &__item {
+        position: relative;
+        display: inline-block;
+    }
+
+    &__link {
+        margin-right: 20px;
+        color: rgb(64, 136, 245);
+        border-bottom: 1px solid transparent;
+        @include tr3;
+
+        &::before {
+            position: absolute;
+            right: 5px;
+            font-size: 16px;
+            content: "\f105";
+            @include icon;
+        }
+
+        &:hover {
+            border-bottom: 1px solid rgb(64, 136, 245);
+        }
+
+        &--disable {
+            color: inherit;
+            border-bottom: none;
+
+            &::before {
+                content: '';
+            }
+
+            &:hover {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+//end breadcrumbs======================================================
+// list======================================================
+
+.list {
+    &__title {
+        margin-bottom: 15px;
+        font-size: 24px;
+        line-height: 30px;
+        @include c700;
+    }
+
+    &__items {
+        list-style: none;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 20px;
+        line-height: 35px;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            content: "\f00c";
+            @include icon;
+            color: rgb(64, 136, 245);
+        }
+    }
+
+    &--indent {
+        margin-top: 20px;
+    }
+}
+
+//end list======================================================
+
+.desc {
+    padding-left: 20px;
+    margin: 30px 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5f5f5f;
+    border-left: 1px solid rgb(64, 136, 245);
+}
+
+// pagination====================================================================================
+.pagination {
+    display: flex;
+    list-style: none;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #d3d3d3;
+        color: #626262;
+
+        &+& {
+            margin-left: 5px;
+        }
+
+        &:first-child,
+        &:last-child {
+            position: relative;
+
+            .pagination__link {
+                padding: 17px;
+            }
+
+            &::before {
+                position: absolute;
+                @include icon;
+                @include translate50;
+            }
+        }
+
+        &:first-child::before {
+            content: "\f100";
+        }
+
+        &:last-child::before {
+            content: "\f101";
+        }
+
+        &--active {
+            background-color: #8b8b8b;
+        }
+    }
+
+    &__link {
+        z-index: 2;
+        display: block;
+        padding: 7px 13px;
+        @include tr3;
+        &:hover {
+            box-shadow: 0 0 5px 0 #000;
+        }
+
+        &--active {
+            color: #fff;
+            background-color: #8b8b8b;
+
+            &:hover {
+                box-shadow: none;
+            }
+        }
+
+
+    }
+}
+
+//end pagination====================================================================================

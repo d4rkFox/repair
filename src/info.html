@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('components/_head.html')
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            @@include('components/_header.html')
+            <main class="main">
+                <!-- Section info -->
+                <section class="info info--contact">
+                    <div class="container">
+                        <h4 class="title">
+                            Контакты
+                        </h4>
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__link breadcrumbs__link--disable">
+                                    Контакты
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="info__inner">
+                            <div class="info__content">
+                                <address class="info__contact-wrapper">
+                                    <div class="info__contact">
+                                        <div class="info__subtitle info__subtitle--marker">
+                                            Адрес:
+                                        </div>
+                                        <div class="info__text">
+                                            Новосибирская обл., г. Новосибирск, ул. Лазурная, 66
+                                        </div>
+                                    </div>
+
+                                    <div class="info__contact">
+                                        <div class="info__subtitle info__subtitle--phone">
+                                            Телефоны:
+                                        </div>
+                                        <a class="info__phone" href="tel:+79876543210">
+                                            +7 (987) 654-32-10
+                                        </a>
+                                        <a class="info__phone" href="tel:+79876543211">
+                                            +7 (987) 654-32-11
+                                        </a>
+                                    </div>
+
+                                    <div class="info__contact">
+                                        <div class="info__subtitle info__subtitle--mail">
+                                            E-mail:
+                                        </div>
+                                        <a class="info__phone" href="mailto:repair@E-mail.com">
+                                            repair@E-mail.com
+                                        </a>
+                                    </div>
+
+                                    <div class="info__contact">
+                                        <div class="info__subtitle info__subtitle--clock">
+                                            Режим работы:
+                                        </div>
+                                        <div class="info__text">
+                                            С 9.00 - 21.00 ВЫХОДНОЙ: СБ-ВС
+                                        </div>
+                                    </div>
+                                </address>
+                            </div>
+                            <div class="info__map">
+                                <iframe class="info__location"
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A6c7dca2edfe12ca0e8707e8578c87c78fc74f6832f4ab07d8995fd6e3aacfb76&amp;source=constructor"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--End Section info -->
+                <!-- Section feedback -->
+                <section class="feedback">
+                    <div class="container">
+                        <h6 class="feedback__title">
+                            Если у вас возникли вопросы или предложения, мы будем рады их рассмотреть.
+                            Для этого заполните форму ниже.
+                        </h6>
+                        <form class="form">
+                            <!-- ===================================================Hidden Required Fields=======================================-->
+                            <input type="hidden" name="project_name" value="Сайт Service">
+                            <input type="hidden" name="admin_email" value="voda-111@yandex.ru">
+                            <input type="hidden" name="form_subject" value="Страница контакты">
+                            <!-- ===================================================END Hidden Required Fields================================== -->
+                            <div class="form__inner">
+                                <div class="form__input-wrapper">
+                                    <input class="form__input" type="text" name="Name" autocomplete="off"
+                                        placeholder="Ваше имя*" required>
+                                    <input class="form__input" type="email" name="E-mail" autocomplete="off"
+                                        placeholder="E-mail" required>
+                                    <input class="form__input" type="tel" name="Tel" autocomplete="off"
+                                        placeholder="Ваш телефон" required>
+                                </div>
+                                <textarea class="form__textarea" name="Text" placeholder="Сообщение*"></textarea>
+                                <label class="label">
+                                    <input type="checkbox" required>
+                                    Согласен на обработку персональных данных *
+                                </label>
+                                <button class="form__btn link">
+                                    Отправить
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <!--End Section feedback -->
+            </main>
+        </div>
+        @@include('components/_footer.html')
+    </div>
+    @@include('components/_scripts.html')
+
+</body>
+
+</html>

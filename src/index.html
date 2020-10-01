@@ -1,11 +1,409 @@
 <!DOCTYPE html>
 <html lang="ru">
-    @@include('components/_head.html')
+@@include('components/_head.html')
 
 <body>
     @@include('components/_header.html')
     <main class="main">
-               
+        <!-- Section benefit -->
+        <section class="benefit">
+            <div class="benefit__container swiper-container">
+
+                <div class="benefit__wrapper swiper-wrapper">
+
+                    <div class="benefit__slide swiper-slide"
+                        style="background-image: url(images/content/slider-bg1.jpg);">
+                        <div class="container--fluid">
+                            <div class="benefit__content">
+                                <h2 class="benefit__title">
+                                    от 490 руб.на ремонт стиральных машин
+                                </h2>
+                                <div class="benefit__text">
+                                    Только 7 дней супер акция!
+                                    <span class="benefit__text">
+                                        Успей до повышения НДС до 30%!
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefit__slide swiper-slide"
+                        style="background-image: url(images/content/slider-bg2.jpg);">
+                        <div class="container--fluid">
+                            <div class="benefit__content">
+                                <h2 class="benefit__title">
+                                    Ремонт всех видов бытовой техники
+                                </h2>
+                                <div class="benefit__text">
+                                    Профессиональные мастера. Короткие сроки.
+                                    <span class="benefit__text">
+                                        Адекватные цены.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="benefit__pagination swiper-pagination"></div>
+
+
+                <div class="benefit__arrow-prev"></div>
+                <div class="benefit__arrow-next"></div>
+
+            </div>
+        </section>
+        <!--End Section benefit -->
+        <!--Section service -->
+        <section class="service">
+            <div class="container">
+                <h3 class="service__title">
+                    Наши услуги
+                </h3>
+
+                <div class="service__items">
+                    <div class="card">
+                        <div class="card__img-wrapper">
+                            <img class="card__img" src="images/content/service-1.jpg"
+                                alt="Ремонт крупной бытовой техники">
+                            <a class="card__link-wrapper" href="appliances.html">
+                                <span class="card__link">
+                                    Подробнее
+                                </span>
+                            </a>
+                        </div>
+                        <a class="card__content" href="appliances.html">
+                            <h4 class="card__title">
+                                Ремонт крупной бытовой техники
+                            </h4>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__img-wrapper">
+                            <img class="card__img" src="images/content/service-2.jpg"
+                                alt="Ремонт мелкой бытовой техники">
+                            <a class="card__link-wrapper" href="appliances-small.html">
+                                <span class="card__link">
+                                    Подробнее
+                                </span>
+                            </a>
+                        </div>
+                        <a class="card__content" href="appliances-small.html">
+                            <h4 class="card__title">
+                                Ремонт мелкой бытовой техники
+                            </h4>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__img-wrapper">
+                            <img class="card__img" src="images/content/service-3.jpg" alt="Ремонт телевизоров">
+                            <a class="card__link-wrapper" href="tv.html">
+                                <span class="card__link">
+                                    Подробнее
+                                </span>
+                            </a>
+                        </div>
+                        <a class="card__content" href="tv.html">
+                            <h4 class="card__title">
+                                Ремонт телевизоров
+                            </h4>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__img-wrapper">
+                            <img class="card__img" src="images/content/service-4.jpg" alt="Ремонт кофемашин">
+                            <a class="card__link-wrapper" href="coffee.html">
+                                <span class="card__link">
+                                    Подробнее
+                                </span>
+                            </a>
+                        </div>
+                        <a class="card__content" href="coffee.html">
+                            <h4 class="card__title">
+                                Ремонт кофемашин
+                            </h4>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__img-wrapper">
+                            <img class="card__img" src="images/content/service-5.jpg" alt="Ремонт водонагревателей">
+                            <a class="card__link-wrapper" href="waterHeater.html">
+                                <span class="card__link">
+                                    Подробнее
+                                </span>
+                            </a>
+                        </div>
+                        <a class="card__content" href="waterHeater.html">
+                            <h4 class="card__title">
+                                Ремонт водонагревателей
+                            </h4>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__img-wrapper">
+                            <img class="card__img" src="images/content/service-6.jpg" alt="Ремонт сплит-систем">
+                            <a class="card__link-wrapper" href="splitSystem.html">
+                                <span class="card__link">
+                                    Подробнее
+                                </span>
+                            </a>
+                        </div>
+                        <a class="card__content" href="splitSystem.html">
+                            <h4 class="card__title">
+                                Ремонт сплит-систем
+                            </h4>
+                        </a>
+                    </div>
+                </div>
+                <a class="service__link link" href="services.html">
+                    Смотреть все
+                </a>
+            </div>
+        </section>
+        <!--End Section service -->
+        <!--Section quality -->
+        <section class="quality" style="background-image: url(images/content/quality-bg.jpg);">
+            <div class="container">
+                <h4 class="quality__title">
+                    НАШИ ЦЕНЫ ЗНАЧИТЕЛЬНО НИЖЕ РЫНОЧНЫХ, ПОЧЕМУ?
+                </h4>
+                <div class="quality__items">
+                    <div class="quality__item quality__item--coin">
+                        <h5 class="quality__subtitle">
+                            Экономия на материалах от 7 до 20%
+                        </h5>
+                        <p class="quality__text">
+                            Строительные материалы для Вашего ремонта обойдутся на 7-20% дешевле рыночной стоимости,
+                            благодаря нашему долгосрочному сотрудничеству с их производителями
+                        </p>
+                    </div>
+
+                    <div class="quality__item quality__item--head">
+                        <h5 class="quality__subtitle">
+                            Цены на услуги в среднем ниже на 20%
+                        </h5>
+                        <p class="quality__text">
+                            Мы принципиально не работаем с субподрядчиками. Что позволяет нам существенно снизить
+                            затраты, а Вам сэкономить на ремонте
+                        </p>
+                    </div>
+
+                    <div class="quality__item quality__item--gear">
+                        <h5 class="quality__subtitle">
+                            Гибкие тарифы
+                        </h5>
+                        <p class="quality__text">
+                            Вы сами определите стоимость ремонта, мы лишь подберем оптимальный комплекс
+                        </p>
+                    </div>
+
+                    <div class="quality__item quality__item--prom">
+                        <h5 class="quality__subtitle">
+                            Нашли дешевле? Вернем 120% от разницы!
+                        </h5>
+                        <p class="quality__text">
+                            Если Вы нашли цену ниже на аналогичный ремонт в другой компании, то предоставьте нам смету и
+                            мы гарантируем еще более низкую цену!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--End Section quality -->
+        <!--Section brands -->
+        <section class="brands">
+            <div class="container">
+                <div class="brands__inner">
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner1.png"
+                            alt="AEG">
+                    </div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner10.png"
+                            alt="gorenje"></div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner3.png"
+                            alt="ariston"></div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner4.png"
+                            alt="beko">
+                    </div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner5.png"
+                            alt="bosch">
+                    </div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner6.png"
+                            alt="candy">
+                    </div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner7.png"
+                            alt="daewoo"></div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner8.png"
+                            alt="electrolux"></div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner9.png"
+                            alt="general electric"></div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner10.png"
+                            alt="gorenje"></div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner11.png"
+                            alt="grundig"></div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner12.png"
+                            alt="hansa"></div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner13.png"
+                            alt="indesit"></div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner14.png"
+                            alt="JVC">
+                    </div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner15.png"
+                            alt="LG">
+                    </div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner16.png"
+                            alt="panasonic"></div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner17.png"
+                            alt="siemens"></div>
+                    <div class="brands__img-wrapper"><img class="brands__img" src="images/content/partner18.png"
+                            alt="vitek"></div>
+                </div>
+            </div>
+        </section>
+        <!--End Section brands -->
+        <!-- Section about -->
+
+        <section class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__desc">
+                        <h3 class="about__title title">
+                            Коротко о нас
+                        </h3>
+                        <p class="about__text">Таким образом сложившаяся структура организации позволяет оценить
+                            значение новых предложений. Таким образом дальнейшее развитие различных форм деятельности
+                            влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении
+                            поставленных задач.</p>
+                        <p class="about__text">Таким образом постоянное информационно-пропагандистское обеспечение нашей
+                            деятельности способствует подготовки и реализации системы обучения кадров, соответствует
+                            насущным потребностям.</p>
+                        <p class="about__text">
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции обеспечивает
+                            широкому кругу (специалистов) участие в формировании новых предложений.
+                        </p>
+                        <p class="about__text">
+                            Задача организации, в особенности же реализация намеченных плановых заданий играет важную
+                            роль.
+                        </p>
+                        <a class="about__link link" href="about.html">
+                            Подробнее
+                        </a>
+                    </div>
+                    <article class="about__news-wrapper">
+                        <h4 class="about__subtitle">
+                            <a class="about__news-link" href="news-list.html">
+                                Новости компании
+                            </a>
+                        </h4>
+                        
+                        <article class="news">
+                            <a class="news__link-img" href="news1.html">
+                                <img class="news__img" src="images/content/news-1.jpg" alt="news-img">
+                            </a>
+                            <div class="news__content">
+                                <time class="news__time" datetime="2020-05-20">20.05.2020</time>
+                                <h6 class="news__title">
+                                    <a class="news__link" href="news1.html">
+                                        Порядка, а также постоянное информационно-пропагандистское
+                                    </a>
+                                </h6>
+                                <p class="news__text">
+                                    Равным образом сложившаяся структура организации представляет собой интересный
+                                    эксперимент…
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="news">
+                            <a class="news__link-img" href="news2.html">
+                                <img class="news__img" src="images/content/news-2.jpg" alt="news-img">
+                            </a>
+                            <div class="news__content">
+                                <time class="news__time" datetime="2020-07-21">21.07.2020</time>
+                                <h6 class="news__title">
+                                    <a class="news__link" href="news2.html">
+                                        Организационной деятельности позволяет оценить
+                                    </a>
+                                </h6>
+                                <p class="news__text">
+                                    Равным образом сложившаяся структура организации представляет собой интересный
+                                    эксперимент…
+                                </p>
+                            </div>
+                        </article>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--End Section about -->
+        <!-- Section info -->
+        <section class="info">
+            <div class="container">
+                <div class="info__inner">
+                    <div class="info__content">
+                        <h3 class="info__title title">
+                            Контакты
+                        </h3>
+                        <address class="info__contact-wrapper">
+                            <div class="info__contact">
+                                <div class="info__subtitle info__subtitle--marker">
+                                    Адрес:
+                                </div>
+                                <div class="info__text">
+                                    Новосибирская обл., г. Новосибирск, ул. Лазурная, 66
+                                </div>
+                            </div>
+
+                            <div class="info__contact">
+                                <div class="info__subtitle info__subtitle--phone">
+                                    Телефоны:
+                                </div>
+                                <a class="info__phone" href="tel:+79876543210">
+                                    +7 (987) 654-32-10
+                                </a>
+                                <a class="info__phone" href="tel:+79876543211">
+                                    +7 (987) 654-32-11
+                                </a>
+                            </div>
+
+                            <div class="info__contact">
+                                <div class="info__subtitle info__subtitle--mail">
+                                    E-mail:
+                                </div>
+                                <a class="info__phone" href="mailto:repair@E-mail.com">
+                                    repair@E-mail.com
+                                </a>
+                            </div>
+
+                            <div class="info__contact">
+                                <div class="info__subtitle info__subtitle--clock">
+                                    Режим работы:
+                                </div>
+                                <div class="info__text">
+                                    С 9.00 - 21.00 ВЫХОДНОЙ: СБ-ВС
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="info__map">
+                        <iframe class="info__location"
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A6c7dca2edfe12ca0e8707e8578c87c78fc74f6832f4ab07d8995fd6e3aacfb76&amp;source=constructor">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Section info -->
+
     </main>
     @@include('components/_footer.html')
 

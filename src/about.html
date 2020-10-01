@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('components/_head.html')
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            @@include('components/_header.html')
+            <main class="main">
+                <!-- service-list -->
+                <section class="service-list">
+                    <div class="container">
+                        <h4 class="title">
+                            О компании
+                        </h4>
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__link breadcrumbs__link--disable">
+                                    О компании
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="service-list__inner">
+                            <div class="service-list__content">
+                                <div class="list">
+                                    <h5 class="list__title">
+                                        Компания оказывает услуги по ремонту бытовой техники в Нашем городе:
+                                    </h5>
+                                    <ul class="list__items">
+                                        <li class="list__item">ремонт стиральных машин,</li>
+                                        <li class="list__item">ремонт холодильников,</li>
+                                        <li class="list__item">ремонт телевизоров,</li>
+                                        <li class="list__item">ремонт мелкой бытовой техники,</li>
+                                        <li class="list__item">ремонт водонагревателей,</li>
+                                        <li class="list__item">ремонт кофемашин,</li>
+                                        <li class="list__item">ремонт цифровой техники,</li>
+                                        <li class="list__item">ремонт компьютеров и ноутбуков</li>
+                                    </ul>
+                                </div>
+                                <p class="desc">
+                                    Кроме прочего, оборудование и навыки сотрудиников позволяют осуществлять ремонт и
+                                    покраску.
+                                    Мы гарантируем качество выполненных работ, минимальные сроки, реальные цены и
+                                    высокий уровень сервиса.
+                                </p>
+                                <div class="list">
+                                    <h5 class="list__title">
+                                        Преимущества:
+                                    </h5>
+                                    <ul class="list__items">
+                                        <li class="list__item">профессиональные знания и опыт,</li>
+                                        <li class="list__item">высокий уровень сервиса — мы всегда работаем для клиента,
+                                        </li>
+                                        <li class="list__item">динамичность и гибкость.</li>
+                                    </ul>
+                                </div>
+
+                                <a class="service-list__link link" href="services.html">
+                                    Наши услуги
+                                </a>
+                            </div>
+                            <div class="service-list__gallery">
+                                <a class="service-list__img-wrapper service-list__img-wrapper--first"
+                                    data-fancybox="images" href="images/content/service-4.jpg">
+                                    <img class="service-list__img" src="images/content/service-4.jpg" alt="picture"/>
+                                </a>
+                                <a class="service-list__img-wrapper" data-fancybox="images"
+                                    href="images/content/service-1.jpg">
+                                    <img class="service-list__img" src="images/content/service-1.jpg" alt="picture"/>
+                                </a>
+                                <a class="service-list__img-wrapper" data-fancybox="images"
+                                    href="images/content/service-3.jpg">
+                                    <img class="service-list__img" src="images/content/service-3.jpg" alt="picture"/>
+                                </a>
+                                <a class="service-list__img-wrapper" data-fancybox="images"
+                                    href="images/content/service-6.jpg">
+                                    <img class="service-list__img" src="images/content/service-6.jpg" alt="picture"/>
+                                </a>
+                                <a class="service-list__img-wrapper" data-fancybox="images"
+                                    href="images/content/service-2.jpg">
+                                    <img class="service-list__img" src="images/content/service-2.jpg" alt="picture"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--end service-list -->
+                <!--about-reviews -->
+                <section class="about-reviews">
+                    <div class="container">
+                        <h4 class="about-reviews__title">
+                            Отзывы наших клиентов
+                        </h4>
+                        <div class="about-reviews__container swiper-container">
+
+                            <div class="about-reviews__wrapper swiper-wrapper">
+
+                                <div class="about-reviews__slide swiper-slide">
+                                    <div class="about-reviews__inner">
+                                        <a class="about-reviews__username" href="reviews.html#user-one">
+                                            Виноградов Антон
+                                        </a>
+                                        <time class="about-reviews__time" datetime="2020-06-13T17:58">
+                                            13 Июня 2020, 17:58
+                                        </time>
+                                        <p class="about-reviews__text">
+                                            Жестянка и покраска качественная. С подбором краски всё отлично. Две машины
+                                            в
+                                            ремонт им возил — в цвет попали — вообще не отличишь. Цены, кстати говоря,
+                                            демократичные.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="about-reviews__slide swiper-slide">
+                                    <div class="about-reviews__inner">
+                                        <a class="about-reviews__username" href="reviews.html#user-two">
+                                            Юрий Николайчик
+                                        </a>
+                                        <time class="about-reviews__time" datetime="2020-07-14T17:57">
+                                            14 Июля 2020, 17:57
+                                        </time>
+
+                                        <p class="about-reviews__text">
+                                            Как назло попал в аварию, когда были сложности с финансами. Объездил
+                                            несколько
+                                            мастерских – везде дорого, как- будто в Москве живем. Но вы выручили – цены
+                                            заламывать не стали, справились ребята быстро.…
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="about-reviews__slide swiper-slide">
+                                    <div class="about-reviews__inner">
+                                        <a class="about-reviews__username" href="reviews.html#user-three">
+                                            Павел Прохоренко
+                                        </a>
+                                        <time class="about-reviews__time" datetime="2020-07-14T17:45">
+                                            14 Июля 2020, 17:45
+                                        </time>
+                                        <p class="about-reviews__text">
+                                            Могу похвалить вас за профессионализм и оперативность. У меня свой бизнес и
+                                            поэтому без машины как без ног – нужно было все отремонтировать поскорее. А
+                                            задач перед мастерами стояло немало: бампер передний…
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="about-reviews__slide swiper-slide">
+                                    <div class="about-reviews__inner">
+                                        <a class="about-reviews__username" href="reviews.html#user-four">
+                                            Михаил Федоров
+                                        </a>
+                                        <time class="about-reviews__time" datetime="2020-07-14T17:40">
+                                            14 Июля 2020, 17:40
+                                        </time>
+                                        <p class="about-reviews__text">
+                                            Мне было страшно смотреть, что стало с машиной после того, как сын съездил с
+                                            друзьями на природу. «Расквасили» всю переднюю часть, пришлось менять не
+                                            только
+                                            фары, но и вставлять новую решетку, бампер и…
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="about-reviews__slide swiper-slide">
+                                    <div class="about-reviews__inner">
+                                        <a class="about-reviews__username" href="reviews.html#user-five">
+                                            Николай Чудов
+                                        </a>
+                                        <time class="about-reviews__time" datetime="2020-07-14T17:38">
+                                            14 Июля 2020, 17:38
+                                        </time>
+                                        <p class="about-reviews__text">
+                                            Мне сервис у ребят понравился, обращался по совету знакомого. По качеству
+                                            работ
+                                            претензий нет, срок работ — 5 дней. Срок не выдержали – обещали за 3 дня
+                                            поправить. Прейскурант средний, не дешево, но и…
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="about-reviews__slide swiper-slide">
+                                    <div class="about-reviews__inner">
+                                        <a class="about-reviews__username" href="reviews.html#user-six">
+                                            Марина
+                                        </a>
+                                        <time class="about-reviews__time" datetime="2020-07-14T17:34">
+                                            14 Июля 2020, 17:34
+                                        </time>
+                                        <p class="about-reviews__text">
+                                            Сегодня забрала машину, все супер! Очень довольна работой ребят! Обращалась
+                                            в
+                                            автосервис по совету знакомого, действительно не дорого, быстро и
+                                            качественно!
+                                            Заднее правое крыло, после удара отремонтировали…
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="about-reviews__slide swiper-slide">
+                                    <div class="about-reviews__inner">
+                                        <a class="about-reviews__username" href="reviews.html#user-seven">
+                                            Семён
+                                        </a>
+                                        <time class="about-reviews__time" datetime="2020-07-14T17:25">
+                                            14 Июля 2020, 17:25
+                                        </time>
+                                        <p class="about-reviews__text">
+                                            Первоначальную оценку ремонта дали по письмом на почту, после того как
+                                            прислал
+                                            им фото. Ответили оперативно, похвально. На месте принимают авто на осмотр в
+                                            порядке очереди, долго ждать не пришлось. Компетентный…
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="about-reviews__slide swiper-slide">
+                                    <div class="about-reviews__inner">
+                                        <a class="about-reviews__username" href="reviews.html#user-eight">
+                                            Serzh
+                                        </a>
+                                        <time class="about-reviews__time" datetime="2020-07-14T17:24">
+                                            14 Июля 2020, 17:24
+                                        </time>
+                                        <p class="about-reviews__text">
+                                            Порвался бампер на прошлой неделе (вот так доверяй свою машину жене), от
+                                            наезда
+                                            на бордюр задом. Приличная трещина. Почитал отзывов на разных ребят, решил
+                                            везти
+                                            к вам. Посмотрели ущерб на месте мастера,…
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="about-reviews__pagination swiper-pagination"></div>
+
+                        </div>
+                    </div>
+                </section>
+                <!--end about-reviews -->
+            </main>
+        </div>
+        @@include('components/_footer.html')
+    </div>
+    @@include('components/_scripts.html')
+
+</body>
+
+</html>

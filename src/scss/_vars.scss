@@ -1,6 +1,41 @@
-@mixin g400 {
-    font-family: EBGaramond, sans-serif;
-    font-style: italic;
+@mixin os400 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
     font-weight: 400;
 }
 
+@mixin os700 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin c700 {
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin icon {
+    font-family: 'icomoon';
+}
+
+@mixin tr3 {
+    transition: 0.3s;
+}
+
+@mixin translate50 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin tY-50 {
+    transform: translateY(-50%);
+}
+
+@mixin img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
