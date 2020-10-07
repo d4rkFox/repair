@@ -86,6 +86,24 @@ $(function () {
 
     $(".header__btn").fancybox({});
 
+    var auxiliaryVariableScroll = 0;
+    var info = $(".service");
+    var infoTop = info.offset().top;
+    $(window).scroll(function () {
+        var windowTop = $(this).scrollTop();
+        if (windowTop > infoTop && auxiliaryVariableScroll === 0) {
+            $(".quality__item").each(function (i, quality__item) {
+                $(quality__item).addClass("quality__item--" + i);
+            });
+
+            $(".info__location").attr(
+                "src",
+                "https://yandex.ru/map-widget/v1/?um=constructor%3A6c7dca2edfe12ca0e8707e8578c87c78fc74f6832f4ab07d8995fd6e3aacfb76&amp;source=constructor"
+            );
+            auxiliaryVariableScroll = 1;
+        }
+    });
+
     //E-mail Ajax Send==============================================================================
     $(".form, .popup__form").submit(function () {
         var th = $(this);
